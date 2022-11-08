@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             _counter % 2 == 1
               ? const Text(
-              'GANJIL', style: TextStyle(color: Colors.blue),
+                'GANJIL', style: TextStyle(color: Colors.blue),
               )
               : const Text(
                 'GENAP', style: TextStyle(color: Colors.red)
@@ -67,9 +67,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+
           Container(
             alignment: Alignment.bottomLeft,
             margin: const EdgeInsets.only(left: 33),
@@ -90,6 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: const Icon(Icons.add),
             ),
           )
+        
         ]
       ),
     );
