@@ -1,17 +1,23 @@
-# counter_7
+# Tugas 7 PBP counter_7
+### Muhammad Rafialy Farrel
+### 2106751171
+### PBP-A
 
-A new Flutter project.
+#
 
-## Getting Started
+## 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# pbp-flutter-tugas" 
+## 3. Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut
+
+
+## 4. Jelaskan perbedaan antara const dengan final
+
+
+## 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+
+
+## Referensi
