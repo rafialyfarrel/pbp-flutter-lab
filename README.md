@@ -5,9 +5,8 @@
 
 #
 
-## 1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement
-Navigator push merupakan metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini. Halaman baru akan ditampilkan di atas halaman sebelumnya.
-Navigator.push tidak menghilangkan rute dan dapat kembali ke screen sebelumnya sedangkan Navigator.pushReplacement menghilangkan rute sebelumnya dan menampilkan rute yang baru saja.
+## 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
+Secara sederhana Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau tidak akan pernah berubah. Stateless Widget merupakan widget yang di-build hanya dengan konfigurasi yang telah diinisiasi sejak awal. Stateful Widget merupakan widget yang dinamis atau dapat berubah. Stateful widget dapat mengupdate tampilan, merubah warna, menambah jumlah baris dll.
 
 ## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
 a). **Visibility**  = _Widget_ ini digunakan untuk membuat fungsionalitas tombol _decrement_ yang hilang apabila _counter_ = 0.
@@ -45,17 +44,23 @@ Pertama-tama menambahkan ```_decrementcounter()``` untuk mendefine decrement unt
 
 #
 
-## 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
-Secara sederhana Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau tidak akan pernah berubah. Stateless Widget merupakan widget yang di-build hanya dengan konfigurasi yang telah diinisiasi sejak awal. Stateful Widget merupakan widget yang dinamis atau dapat berubah. Stateful widget dapat mengupdate tampilan, merubah warna, menambah jumlah baris dll.
+## 1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement
+```Navigator``` merupakan metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini sehingga halaman baru akan ditampilkan di atas halaman sebelumnya. ```Navigator.push``` digunakan untuk berpindah dari activity pertama ke activity selanjutnya kemudian ketika dari activity kedua kita men-tap tombol back atau kembali maka kita akan dialihkan ke activity pertama (tidak menghilangkan screen sebelumnya). Sedangkan ```Navigator.pushReplacement``` digunakan untuk perpindahan activity dari satu halaman ke halaman lain akan tetapi, ketika tombol kembali di-tap maka activity sebelumnya dihilangkan.
 
 ## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
-a). **Visibility**  = _Widget_ ini digunakan untuk membuat fungsionalitas tombol _decrement_ yang hilang apabila _counter_ = 0.
-b). **Row**         = Digunakan untuk menempatkan kedua tombol increment dan decrement pada satu baris yang diletakkan pada bawah kiri dan kanan app.
-c). **Scaffold**    = Widget utama/landasan halaman untuk membuat sebuah halaman pada flutter, scaffold ini memiliki beberapa parameter yang biasa kita gunakan seperti appBar untuk membuat AppBar, body untuk bagian tubuhnya, atau kita juga bisa menambahkan floating action bar, maupun mengganti warna background bodynya.
-d). **AppBar**      = Tempat untuk menampilkan _title_ dari program.
-e). **Text**        = Untuk menampilkan tipe bilangan serta _title_ dari program.
-f). **Theme**       = Menentukan tema/warna yang diingikan untuk app.
-g). **Center**      = Semua Widget yang ada didalam Widget ini akan diletakkan di bagian tengah.
+a). **Container**             = UUntuk menampung widget.
+b). **Text**                  = Untuk menampilkan teks.
+c). **Form**                  = Untuk membuat form.
+d). **Icon**                  = Untuk membuat ikon.
+e). **Padding**               = Untuk mengatur tampilan.
+f). **DropdownButton**        = Untuk membuat dropdown.
+g). **Row**                   = Digunakan untuk menempatkan widget secara horizontal.
+h). **Column**                = Digunakan untuk menempatkan widget secara vertikal.
+i). **TextFormField**         = Sebagai tempat menginput teks pada form.
+j). **TextButton**            = Untuk membuat button.
+k). **TextStyle**             = Untuk styling pada text. 
+l). **Drawer**                = Untuk menampilkan menu yang tersembunyi pada sisi kanan atau kiri sebuah aplikasi dan berpindah halaman.
+m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scroll
 
 ## 3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed)
 a). onPressed
@@ -63,12 +68,12 @@ b). onSaved
 c). onChanged
 
 ## 4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter
-
+Navigator merupakan sebuah Widget yang digunakan untuk melakukan perpindahan sebuah activity dari satu activity ke activity yang lain sekaligus dapat mengirimkan sebuah variabel di dalamnya. Cara kerja ```Navigator.push``` adalah menambahkan screen baru pada tumpukan screen (stack) yang berada di atas screen sebelumnya (screen sebelumnya dapat tetap terlihat) sedangkan ```Navigator.pushReplacement``` akan dimunculkan dan screen akan diganti dengan yang baru di push.
 
 ## 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
 
 
 ## Referensi
 1. https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
-2. 
+2. https://mauladaniadi.medium.com/modul-ii-navigator-daily-widgets-e9441c038ae2
 3. 
