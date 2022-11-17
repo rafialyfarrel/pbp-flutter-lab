@@ -66,14 +66,17 @@ m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scr
 a). onPressed
 b). onSaved
 c). onChanged
+d). onClick
+e). onLongPress
+f). onHover
+g). onTap
 
 ## 4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter
 Navigator merupakan sebuah Widget yang digunakan untuk melakukan perpindahan sebuah activity dari satu activity ke activity yang lain sekaligus dapat mengirimkan sebuah variabel di dalamnya. Cara kerja ```Navigator.push``` adalah menambahkan screen baru pada tumpukan screen (stack) yang berada di atas screen sebelumnya (screen sebelumnya dapat tetap terlihat) sedangkan ```Navigator.pushReplacement``` akan dimunculkan dan screen akan diganti dengan yang baru di push.
 
 ## 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
-
+Pertama-tama saya melakukan refactor widget drawer dan membuat routing pada widget drawer. Lalu menambahkan halaman ```addbudget``` beserta form-nya serta membuat model budget. Membuat variabel global untuk menampung isi dari budget. Yang terahir membuat halaman ```databudget``` untuk menampilkan list budget.
 
 ## Referensi
 1. https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
 2. https://mauladaniadi.medium.com/modul-ii-navigator-daily-widgets-e9441c038ae2
-3. 
