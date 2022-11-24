@@ -1,7 +1,6 @@
-import 'package:counter_7/drawer.dart';
+import 'package:counter_7/widgets/drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:counter_7/globals.dart' as globals;
-import 'dart:math' as math;
+import 'package:counter_7/utils/globals.dart' as globals;
 
 class DataBudget extends StatelessWidget {
   const DataBudget({super.key});
@@ -12,7 +11,9 @@ class DataBudget extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Data Budget'),
       ),
-      drawer: const DrawerApp(),
+      drawer: const DrawerApp(
+        route: 'data-budget',
+      ),
       body: globals.budgets.isNotEmpty
           ? ListView.builder(
               itemCount: globals.budgets.length,
@@ -25,14 +26,14 @@ class DataBudget extends StatelessWidget {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 6,
-                        blurRadius: 8,
+                        spreadRadius: 5,
+                        blurRadius: 7,
                         offset:
-                            const Offset(0, 3),
+                            const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                     borderRadius: BorderRadius.circular(20),
-                    color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(0.4),
+                    color: const Color.fromARGB(255, 165, 224, 167),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,7 +42,7 @@ class DataBudget extends StatelessWidget {
                         globals.budgets[index].tanggal,
                       ),
                       const SizedBox(
-                        height: 6,
+                        height: 5,
                       ),
                       Text(
                         globals.budgets[index].judul,
@@ -75,7 +76,12 @@ class DataBudget extends StatelessWidget {
                 );
               },
             )
-          : const Center(child: Text('Data Masih Kosong', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)),
+          : const Center(
+              child: Text(
+                'Data Masih Kosong',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+            ),
     );
   }
 }
