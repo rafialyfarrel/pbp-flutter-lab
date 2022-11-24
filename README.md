@@ -89,7 +89,7 @@ Pertama-tama saya melakukan refactor widget drawer dan membuat routing pada widg
 #
 
 ## 1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
-
+Untuk pengambilan data JSON kita tidak perlu membuat model terlebih dahulu. Kita dapat mengambilan data JSON tersebut dalam bentuk http response dalam bentuk raw data. Namun untuk mempermudah dalam mengakses data dari JSON tersebut, developer harus membuat model yang berfungsi untuk menampung data JSON sehingga mempermudah developer untuk melakukan operasi pada data tersebut.
 
 ## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 a). **Container**             = UUntuk menampung widget.
@@ -107,7 +107,11 @@ l). **Drawer**                = Untuk menampilkan menu yang tersembunyi pada sis
 m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scroll
 
 ## 3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
-
+### a). Membuat class model untuk mendefine data JSON
+### b). Membuat method untuk fetch data dari website json tugas 3 PBP dengan http yang nantinya akan di refactor menjadi sebuah file baru
+### c). Response dari http akan diubah menjadi object Dart dan dimasukkan kedalam list
+### d). Untuk menampilkan data tersebut dapat menggunakan FutureWidget karena result dari server menggunakan Future yang memberikan delay dalam pengambilan data
+### e). Melakukan iterasi terhadap data yang ada untuk menampilkan data
 
 ## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
