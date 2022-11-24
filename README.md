@@ -80,3 +80,38 @@ Pertama-tama saya melakukan refactor widget drawer dan membuat routing pada widg
 ## Referensi
 1. https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
 2. https://mauladaniadi.medium.com/modul-ii-navigator-daily-widgets-e9441c038ae2
+
+# Tugas 9 PBP counter_7
+### Muhammad Rafialy Farrel
+### 2106751171
+### PBP-A
+
+#
+
+## 1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+a). **Container**             = UUntuk menampung widget.
+b). **Text**                  = Untuk menampilkan teks.
+c). **Form**                  = Untuk membuat form.
+d). **Icon**                  = Untuk membuat ikon.
+e). **Padding**               = Untuk mengatur tampilan.
+f). **DropdownButton**        = Untuk membuat dropdown.
+g). **Row**                   = Digunakan untuk menempatkan widget secara horizontal.
+h). **Column**                = Digunakan untuk menempatkan widget secara vertikal.
+i). **TextFormField**         = Sebagai tempat menginput teks pada form.
+j). **TextButton**            = Untuk membuat button.
+k). **TextStyle**             = Untuk styling pada text. 
+l). **Drawer**                = Untuk menampilkan menu yang tersembunyi pada sisi kanan atau kiri sebuah aplikasi dan berpindah halaman.
+m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scroll
+
+## 3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+
+## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+
+## Referensi
+1. 
+2. 
