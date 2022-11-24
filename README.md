@@ -5,7 +5,7 @@
 
 #
 
-## 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya
+## 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Secara sederhana Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau tidak akan pernah berubah. Stateless Widget merupakan widget yang di-build hanya dengan konfigurasi yang telah diinisiasi sejak awal. Stateful Widget merupakan widget yang dinamis atau dapat berubah. Stateful widget dapat mengupdate tampilan, merubah warna, menambah jumlah baris dll.
 
 ## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
@@ -34,3 +34,88 @@ Pertama-tama menambahkan ```_decrementcounter()``` untuk mendefine decrement unt
 1. https://id.reactjs.org/docs/faq-state.html
 2. https://belajarflutter.com/perbedaan-final-dan-const-pada-dart-dan-flutter/
 3. https://blog.rumahcoding.co.id/tutorial-flutter-3-perbedaan-stateless-widget-dan-statefull-widget/
+
+#
+
+# Tugas 8 PBP counter_7
+### Muhammad Rafialy Farrel
+### 2106751171
+### PBP-A
+
+#
+
+## 1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement
+```Navigator``` merupakan metode push digunakan untuk menambahkan rute lain ke atas tumpukan screen (stack) saat ini sehingga halaman baru akan ditampilkan di atas halaman sebelumnya. ```Navigator.push``` digunakan untuk berpindah dari activity pertama ke activity selanjutnya kemudian ketika dari activity kedua kita men-tap tombol back atau kembali maka kita akan dialihkan ke activity pertama (tidak menghilangkan screen sebelumnya). Sedangkan ```Navigator.pushReplacement``` digunakan untuk perpindahan activity dari satu halaman ke halaman lain akan tetapi, ketika tombol kembali di-tap maka activity sebelumnya dihilangkan.
+
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+a). **Container**             = UUntuk menampung widget.
+b). **Text**                  = Untuk menampilkan teks.
+c). **Form**                  = Untuk membuat form.
+d). **Icon**                  = Untuk membuat ikon.
+e). **Padding**               = Untuk mengatur tampilan.
+f). **DropdownButton**        = Untuk membuat dropdown.
+g). **Row**                   = Digunakan untuk menempatkan widget secara horizontal.
+h). **Column**                = Digunakan untuk menempatkan widget secara vertikal.
+i). **TextFormField**         = Sebagai tempat menginput teks pada form.
+j). **TextButton**            = Untuk membuat button.
+k). **TextStyle**             = Untuk styling pada text. 
+l). **Drawer**                = Untuk menampilkan menu yang tersembunyi pada sisi kanan atau kiri sebuah aplikasi dan berpindah halaman.
+m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scroll
+
+## 3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed)
+a). onPressed
+b). onSaved
+c). onChanged
+d). onClick
+e). onLongPress
+f). onHover
+g). onTap
+
+## 4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter
+Navigator merupakan sebuah Widget yang digunakan untuk melakukan perpindahan sebuah activity dari satu activity ke activity yang lain sekaligus dapat mengirimkan sebuah variabel di dalamnya. Cara kerja ```Navigator.push``` adalah menambahkan screen baru pada tumpukan screen (stack) yang berada di atas screen sebelumnya (screen sebelumnya dapat tetap terlihat) sedangkan ```Navigator.pushReplacement``` akan dimunculkan dan screen akan diganti dengan yang baru di push.
+
+## 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+Pertama-tama saya melakukan refactor widget drawer dan membuat routing pada widget drawer. Lalu menambahkan halaman ```addbudget``` beserta form-nya serta membuat model budget. Membuat variabel global untuk menampung isi dari budget. Yang terahir membuat halaman ```databudget``` untuk menampilkan list budget.
+
+## Referensi
+1. https://belajarflutter.com/memahami-navigasi-routing-di-flutter/
+2. https://mauladaniadi.medium.com/modul-ii-navigator-daily-widgets-e9441c038ae2
+
+# Tugas 9 PBP counter_7
+### Muhammad Rafialy Farrel
+### 2106751171
+### PBP-A
+
+#
+
+## 1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Untuk pengambilan data JSON kita tidak perlu membuat model terlebih dahulu. Kita dapat mengambilan data JSON tersebut dalam bentuk http response dalam bentuk raw data. Namun untuk mempermudah dalam mengakses data dari JSON tersebut, developer harus membuat model yang berfungsi untuk menampung data JSON sehingga mempermudah developer untuk melakukan operasi pada data tersebut.
+
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+a). **Container**             = UUntuk menampung widget.
+b). **Text**                  = Untuk menampilkan teks.
+c). **Form**                  = Untuk membuat form.
+d). **Icon**                  = Untuk membuat ikon.
+e). **Padding**               = Untuk mengatur tampilan.
+f). **DropdownButton**        = Untuk membuat dropdown.
+g). **Row**                   = Digunakan untuk menempatkan widget secara horizontal.
+h). **Column**                = Digunakan untuk menempatkan widget secara vertikal.
+i). **TextFormField**         = Sebagai tempat menginput teks pada form.
+j). **TextButton**            = Untuk membuat button.
+k). **TextStyle**             = Untuk styling pada text. 
+l). **Drawer**                = Untuk menampilkan menu yang tersembunyi pada sisi kanan atau kiri sebuah aplikasi dan berpindah halaman.
+m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scroll
+
+## 3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+### a). Membuat class model untuk mendefine data JSON
+### b). Membuat method untuk fetch data dari website json tugas 3 PBP dengan http yang nantinya akan di refactor menjadi sebuah file baru
+### c). Response dari http akan diubah menjadi object Dart dan dimasukkan kedalam list
+### d). Untuk menampilkan data tersebut dapat menggunakan FutureWidget karena result dari server menggunakan Future yang memberikan delay dalam pengambilan data
+### e). Melakukan iterasi terhadap data yang ada untuk menampilkan data
+
+## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+
+## Referensi
+1. 
+2. 
