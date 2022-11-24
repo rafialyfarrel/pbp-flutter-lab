@@ -114,8 +114,4 @@ m). **SingleChildScrollView** = Digunakan untuk membuat widget yang dapat di scr
 ### e). Melakukan iterasi terhadap data yang ada untuk menampilkan data
 
 ## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
-
-
-## Referensi
-1. 
-2. 
+Pertama-tama membuat mywatchlistmodels.dart untuk menjadi model dari page watchlist yang menampung data json. Membuat page route drawer untuk meneruskan route ke MyWatchlist. Membuat method untuk fetch data dari website json tugas 3 PBP dengan http yang nantinya akan di refactor menjadi sebuah file baru. Membuat page mywatchlist untuk menampilkan data yang berada pada json yaitu list film dan page detail ketika diklik untuk menampilkan detail filmnya.
